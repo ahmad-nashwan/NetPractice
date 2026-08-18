@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by ahmad-nashwan.*
+*This project has been created as part of the 42 curriculum by anashwan*
 
 ## Description
 
@@ -46,8 +46,13 @@ NetPractice is a practical exercise designed to introduce the basics of computer
 
 ### References
 
-
+- [Networking Fundamentals — undefined_notes](https://undefined-notes.vercel.app/articles/networking-fundamentals/) — my own study notes written while completing this project, covering the OSI/TCP-IP models, encapsulation, ARP, routing, subnetting, DHCP, DNS, and TCP/UDP in depth.
+- [GeeksforGeeks — Subnetting in Computer Networks](https://www.geeksforgeeks.org/computer-networks/subnetting-in-computer-network/) — subnet mask and CIDR calculation walkthrough.
+- [GeeksforGeeks — DHCP (Dynamic Host Configuration Protocol)](https://www.geeksforgeeks.org/computer-networks/dynamic-host-configuration-protocol-dhcp/) — DORA process explained.
+- [GeeksforGeeks — ARP (Address Resolution Protocol)](https://www.geeksforgeeks.org/computer-networks/address-resolution-protocol-arp/) — how IP-to-MAC resolution works.
+- [GeeksforGeeks — OSI Model](https://www.geeksforgeeks.org/computer-networks/layers-of-osi-model/) — layer-by-layer breakdown of the OSI model.
+- [subnetting.net](https://subnetting.net/) — interactive subnetting practice tool used to drill exercises before evaluation.
 
 ### AI Usage
 
-AI was used to help generate the content of the `networking-fundamentals.md` study notes, which served as the primary reference material for completing the 10 levels. It was also used to assist in writing this README.
+AI was used to debug errors in the configuration files and helping me study.
