@@ -1,57 +1,20 @@
 *This project has been created as part of the 42 curriculum by anashwan*
 
+**[You can view my notes that cover the concepts in more detail here.](https://undefined-notes.vercel.app/articles/networking-fundamentals/)**
+
 ## Description
 
-NetPractice is a practical exercise designed to introduce the basics of computer networking. The project provides a training interface with 10 levels of network configuration challenges. Each level presents a non-functioning network diagram, and the goal is to configure IP addresses, subnet masks, default gateways, and other network settings until the network operates correctly.
-
-## Instructions
-
-1. Download the project files and extract them into a folder of your choice.
-2. Run the training interface:
-   ```bash
-   ./run.sh
-   ```
-   If `run.sh` does not work, you can start a local server manually:
-   ```bash
-   python3 -m http.server 49242
-   ```
-   Then open `http://localhost:49242` in your web browser.
-
-3. Enter your login in the training interface to use your personal configuration.
-4. For each level, modify the unshaded fields to configure the network correctly.
-5. Use the **[Check again]** button to verify your configuration.
-6. Once a level is completed, click **[Get my config]** to export your configuration file.
-7. Repeat for all 10 levels.
-
-### Submission
-
-- Export 10 configuration files (one per level) using the **[Get my config]** button.
-- Place all 10 files at the root of your Git repository.
-- During the defense, you must successfully complete three random levels within a time limit.
-- No external tools are allowed during evaluation; a simple calculator such as `bc` is tolerated.
-
-## Resources
+NetPractice is a practical exercise designed to introduce the basics of computer networking. The goal is to configure IP addresses, subnet masks, default gateways, and other network settings until the network operates correctly.
 
 ### Networking Concepts Studied
 
-- **TCP/IP addressing** — understanding IP addresses, network bits, and host bits
-- **Subnet masks** — CIDR notation, bitwise AND operations, and calculating network IDs
-- **Default gateways** — how devices route traffic outside their local network
-- **Routers and switches** — the role of routers at the Network layer and switches at the Data Link layer
-- **OSI and TCP/IP layers** — the 5-layer TCP/IP model and the 7-layer OSI model, including encapsulation and decapsulation
-- **ARP** — Address Resolution Protocol for resolving IP addresses to MAC addresses on the local network
-- **DHCP** — Dynamic Host Configuration Protocol and the DORA process
-- **DNS** — Domain Name System resolution process
-- **TCP and UDP** — transport layer protocols, the 3-way handshake, and when to use each
-
-### References
-
-- [Networking Fundamentals — undefined_notes](https://undefined-notes.vercel.app/articles/networking-fundamentals/) — my own study notes written while completing this project, covering the OSI/TCP-IP models, encapsulation, ARP, routing, subnetting, DHCP, DNS, and TCP/UDP in depth.
-- [GeeksforGeeks — Subnetting in Computer Networks](https://www.geeksforgeeks.org/computer-networks/subnetting-in-computer-network/) — subnet mask and CIDR calculation walkthrough.
-- [GeeksforGeeks — DHCP (Dynamic Host Configuration Protocol)](https://www.geeksforgeeks.org/computer-networks/dynamic-host-configuration-protocol-dhcp/) — DORA process explained.
-- [GeeksforGeeks — ARP (Address Resolution Protocol)](https://www.geeksforgeeks.org/computer-networks/address-resolution-protocol-arp/) — how IP-to-MAC resolution works.
-- [GeeksforGeeks — OSI Model](https://www.geeksforgeeks.org/computer-networks/layers-of-osi-model/) — layer-by-layer breakdown of the OSI model.
-- [subnetting.net](https://subnetting.net/) — interactive subnetting practice tool used to drill exercises before evaluation.
+- **Routers and switches** — A switch connects a group of computers that are close to each other, using MAC addresses to send data between devices on the same local wire. A router operates at the Network layer and thinks in IP addresses, letting your data leave that wire and find its way across other networks.
+- **OSI and TCP/IP layers** — Data doesn't just go from your laptop to a server; it gets wrapped, layer by layer, handed down, sent, and unwrapped in reverse. Top to bottom: Application (what you actually see), Transport (which program it's for), Network (how it crosses the internet), Data Link (how it moves on the local wire), Physical (raw signal).
+- **ARP** — Because your laptop doesn't know the exact MAC address it needs to build a frame, it sends a broadcast message asking "Who has this IP address?"
+- **Subnet masks** — The subnet mask is the dividing line that tells the computer exactly where the Network Bits end and the Host Bits begin. We drag that line to the right to borrow Host Bits and create smaller, custom networks.
+- **DHCP** — Hands out an IP address, the subnet mask, the default gateway, and the DNS server automatically using a 4-step broadcast handshake called DORA.
+- **DNS** — Exists because humans remember website names, but routers only understand IP addresses.
+- **TCP and UDP** — TCP establishes a dedicated, tracked conversation using a 3-way handshake. UDP throws out the session overhead for pure speed, making it the right choice when a late packet is worse than a missing one.
 
 ### AI Usage
 
