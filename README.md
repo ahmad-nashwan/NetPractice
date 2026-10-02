@@ -1,6 +1,6 @@
 *This project has been created as part of the 42 curriculum by anashwan*
 
-**[You can view my notes that cover the concepts in more detail here.](https://undefined-notes.vercel.app/articles/networking-fundamentals/)**
+**[You can view my notes that cover the concepts in more detail here.](https://ahmad-nashwan.github.io/articles/networking-fundamentals/)**
 
 ## Description
 
